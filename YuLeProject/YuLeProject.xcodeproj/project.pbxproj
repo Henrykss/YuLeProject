@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3111830C33C83A145C1F7363 /* libPods-YuLeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C0EC77F90EE2E24F57A1E7 /* libPods-YuLeProject.a */; };
 		F4E25C861E9B186C006AFFC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E25C851E9B186C006AFFC1 /* main.m */; };
 		F4E25C891E9B186C006AFFC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E25C881E9B186C006AFFC1 /* AppDelegate.m */; };
 		F4E25C8C1E9B186C006AFFC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E25C8B1E9B186C006AFFC1 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3C0EC77F90EE2E24F57A1E7 /* libPods-YuLeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YuLeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09B8B4D0057AE6B4406C569 /* Pods-YuLeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuLeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YuLeProject/Pods-YuLeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F4E25C811E9B186C006AFFC1 /* YuLeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuLeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E25C851E9B186C006AFFC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4E25C871E9B186C006AFFC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		F4E25CA91E9B186C006AFFC1 /* YuLeProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuLeProjectUITests.m; sourceTree = "<group>"; };
 		F4E25CAB1E9B186C006AFFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4E262F01E9B18AD006AFFC1 /* NIMKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NIMKit.xcodeproj; path = ../../../../Downloads/NIM_iOS_Demo_v3.5.5/NIMKit/NIMKit.xcodeproj; sourceTree = "<group>"; };
+		FF9F4059AB82BEAE910C47B5 /* Pods-YuLeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuLeProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-YuLeProject/Pods-YuLeProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3111830C33C83A145C1F7363 /* libPods-YuLeProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F5BBA09191AF43B843C47B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B09B8B4D0057AE6B4406C569 /* Pods-YuLeProject.debug.xcconfig */,
+				FF9F4059AB82BEAE910C47B5 /* Pods-YuLeProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C6BE59D3080756511B5CE55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3C0EC77F90EE2E24F57A1E7 /* libPods-YuLeProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4E25C781E9B186C006AFFC1 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +116,8 @@
 				F4E25C9D1E9B186C006AFFC1 /* YuLeProjectTests */,
 				F4E25CA81E9B186C006AFFC1 /* YuLeProjectUITests */,
 				F4E25C821E9B186C006AFFC1 /* Products */,
+				4F5BBA09191AF43B843C47B2 /* Pods */,
+				9C6BE59D3080756511B5CE55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4E25CAE1E9B186C006AFFC1 /* Build configuration list for PBXNativeTarget "YuLeProject" */;
 			buildPhases = (
+				40E8D5BFAAD28BEED3C0A37D /* [CP] Check Pods Manifest.lock */,
 				F4E25C7D1E9B186C006AFFC1 /* Sources */,
 				F4E25C7E1E9B186C006AFFC1 /* Frameworks */,
 				F4E25C7F1E9B186C006AFFC1 /* Resources */,
+				91230D253433C90EA8352674 /* [CP] Embed Pods Frameworks */,
+				7A36061FE18858BB49D38930 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,6 +328,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40E8D5BFAAD28BEED3C0A37D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A36061FE18858BB49D38930 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YuLeProject/Pods-YuLeProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91230D253433C90EA8352674 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YuLeProject/Pods-YuLeProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4E25C7D1E9B186C006AFFC1 /* Sources */ = {
@@ -456,6 +531,7 @@
 		};
 		F4E25CAF1E9B186C006AFFC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B09B8B4D0057AE6B4406C569 /* Pods-YuLeProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 59T78NTKCZ;
@@ -468,6 +544,7 @@
 		};
 		F4E25CB01E9B186C006AFFC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9F4059AB82BEAE910C47B5 /* Pods-YuLeProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 59T78NTKCZ;
@@ -543,6 +620,7 @@
 				F4E25CB01E9B186C006AFFC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4E25CB11E9B186C006AFFC1 /* Build configuration list for PBXNativeTarget "YuLeProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +629,7 @@
 				F4E25CB31E9B186C006AFFC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4E25CB41E9B186C006AFFC1 /* Build configuration list for PBXNativeTarget "YuLeProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +638,7 @@
 				F4E25CB61E9B186C006AFFC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
